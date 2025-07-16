@@ -1,13 +1,372 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>IROID</title>
   </head>
   <body>
+    <section
+      class="bg-[var(--background)] p-[30px] rounded-[45px] relative overflow-hidden"
+    >
+      <!-- Decorative Top-Left SVG -->
+      <img
+        src="./assets/icons/Landing-black.svg"
+        alt=""
+        class="absolute top-0 left-0 w-[537px] z-0"
+      />
+
+      <!-- Main Navigation -->
+      <nav class="flex justify-between items-center z-10 relative">
+        <div>
+          <img class="h-[51px] w-[176px]" src="./images/Logo.svg" alt="" />
+        </div>
+
+        <div>
+          <ul class="flex gap-[40px]">
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Agency
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Services
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Works
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Careers
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Technologies
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Testrimonials
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Contact
+            </li>
+            <li
+              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
+            >
+              Blog
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-[20px]">
+          <button
+            class="rounded-[28px] border border-[var(--custom-border)] py-[13px] tracking-[0.02em] px-[24px] leading-[100%] font-[syne-medium]"
+          >
+            Get Quote
+          </button>
+
+          <button
+            class="rounded-[28px] border border-[var(--custom-border)] py-[13px] px-[24px] leading-[100%] tracking-[0.02em] flex gap-[10px] items-center text-[16px] font-[syne-medium]"
+          >
+            Hire a Developer
+            <img
+              class="h-[12px] w-[12px]"
+              src="./assets/icons/nav-button-icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </nav>
+
+      <!-- Sub Heading -->
+      <div class="flex justify-end mt-[50px] z-10 relative">
+        <p
+          class="text-[24px] font-[syne-medium] leading-[120%] text-[var(--primary)]"
+        >
+          Transform your brand, unleash the <br />
+          power of digital with us
+        </p>
+      </div>
+
+      <!-- Main Grid Section -->
+      <div class="grid grid-cols-12 gap-[30px] mt-[20px] relative z-10">
+        <!-- Text Content -->
+        <div class="col-span-8 grid gap-[10px]">
+          <div class="flex justify-end mr-[200px]">
+            <div>
+              <img
+                class="w-[106px] h-[106px]"
+                src="./assets/icons/blackstar.svg"
+                alt=""
+              />
+              <img
+                class="w-[42px] h-[42px] ml-[50px]"
+                src="./assets/icons/blackstar.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <h1
+            class="text-[98px] leading-[109px] text-[var(--primary)] tracking-[0.02em] font-[syne-medium]"
+          >
+            Crafting New <br />
+            Digital Experiences
+          </h1>
+
+          <p
+            class="text-[var(--primary)] text-[24px] leading-[100%] tracking-[0.02em] font-[syne-medium]"
+          >
+            We’ve got you covered for all your IT needs with our perfectly
+            Crafted <br />
+            cutting - edges solutions
+          </p>
+        </div>
+
+        <!-- Landing Ball Image -->
+        <div class="col-span-4 relative z-0">
+          <img
+            class="absolute right-[-100px] h-[700px] w-[700px] object-contain"
+            src="./images/Landing-ball.png"
+            alt="Landing Ball"
+          />
+        </div>
+      </div>
+
+      <!-- Company Logos with Blur -->
+      <div
+        class="py-[20px] px-[30px] rounded-[30px] mt-[20px] z-10 relative bg-[rgba(245,245,245,0.5)] backdrop-blur-[12px]"
+      >
+        <p class="text-[14px] text-[var(--secondary)] mb-[5px]">
+          You’re in good company
+        </p>
+
+        <div class="flex justify-between flex-wrap gap-[20px]">
+          <img src="./assets/icons/mozilla.svg" alt="" />
+          <img src="./assets/icons/uber.svg" alt="" />
+          <img src="./assets/icons/google.svg" alt="" />
+          <img src="./assets/icons/alpaca.svg" alt="" />
+          <img src="./assets/icons/asana.svg" alt="" />
+          <img src="./assets/icons/asana.svg" alt="" />
+          <img src="./assets/icons/asana.svg" alt="" />
+          <img src="./assets/icons/paypal.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
     
-<h1 >NIyas</h1>
+
+
+
+
+
+    <section class="pt-[30px]">
+      <div class="grid grid-cols-12 gap-[30px]">
+        <!-- Left Column -->
+        <div
+          class="col-span-7 bg-[var(--background)] p-[20px] rounded-[45px] relative overflow-hidden"
+        >
+          <!-- Header Row -->
+          <div class="flex justify-between">
+            <div class="flex gap-[20px] items-end">
+              <p class="text-[24px] text-[var(--primary)] font-[syne-medium]">
+                About Us
+              </p>
+              <div>
+                <img
+                  class="w-[44px] h-[44px]"
+                  src="./assets/icons/blackstar.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[18px] h-[18px]"
+                  src="./assets/icons/blackstar.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="w-[146px] h-[146px]"
+                src="./assets/icons/about-section-ball.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Title & Paragraph -->
+          <div class="mt-[20px] z-10 relative mb-[180px]">
+            <h1
+              class="text-[48px] leading-[80px] text-[var(--primary)] font-[syne-medium]"
+            >
+              #<span class="text-[99px] font-[syne-medium]">1</span> IT
+              Consulting Company in
+              <span class="text-[48px] font-[syne-extrabold]"> USA</span>
+            </h1>
+            <!-- GAP: 80px space between paragraph and round image -->
+            <p
+              class="text-[18px] font-[syne-medium] text-[var(--secondary)] tracking-[2%] leading-[41px] mb-[80px]"
+            >
+              As a premier IT Company in UK, we prioritise delivering
+              exceptional services to clients across various industries. Over
+              the years, we've crafted websites, web applications, and mobile
+              apps that enhance customer engagement and drive revenue growth. We
+              recognise that our clients seek more than just digital products;
+              they want effective tools to connect with their audiences and grow
+              their businesses. To meet the diverse needs of our clients, we
+              offer a wide range of services, including web design and
+              development, e-commerce solutions, mobile app development, digital
+              marketing, content marketing, ERP and CRM development, and more.
+              Our Mobile App Developers UK is committed to providing
+              high-quality services at best efficient costs.
+            </p>
+          </div>
+
+          <!-- Bottom-Left Round Image with proper spacing -->
+          <div class="absolute left-[-90px] bottom-[-100px] z-0">
+            <img
+              src="./assets/icons/about-round.png"
+              alt=""
+              class="h-[280px] w-auto"
+            />
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-span-5">
+
+
+
+          <div
+            class="bg-black rounded-[45px] relative p-[30px] overflow-hidden"
+          >
+            <!-- Floating image: top-right, outside padding -->
+            <img
+              src="./assets/icons/about-section-ball.png"
+              alt=""
+              class="h-[146px] w-[146px] absolute top-0 right-0 translate-x-[25%] translate-y-[-25%] z-0"
+            />
+
+            <!-- Content stays clean inside padding -->
+            <div class="relative z-10">
+              <p
+                class="font-[syne-medium] text-[150px] text-[var(--third)] leading-none"
+              >
+                +8o
+              </p>
+            </div>
+
+            <div class="flex justify-between">
+              <p
+                class="text-[21px] font-[syne-semibold] leading-[31px] tracking-[2%] text-[var(--third)]"
+              >
+                We’re a large yet tightly-knit <br />
+                group of skilled & creative peeps
+              </p>
+              <img
+                class="h-[40px] w-[54px]"
+                src="./assets/icons/about-first.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-[var(--background)] rounded-[45px] relative p-[30px] overflow-hidden"
+          >
+            <div>
+              <img
+                class="h-[44px] w-[55px]"
+                src="./assets/icons/about-second.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-between">
+              <p
+                class="font-[syne-medium] text-[90px] text-[var(--primary)] leading-none"
+              >
+                +180<span
+                  class="text-[21px] font-[syne-semibold] leading-[31px] tracking-[2%]"
+                  >clients</span
+                >
+              </p>
+
+              <div>
+                <img
+                  class="w-[257px] h-[259px] absolute right-[-85px] bottom-[-100px]"
+                  src="./assets//icons/about-second-icon.png"
+                  alt=""
+                />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="bg-black rounded-[45px] relative p-[30px] overflow-hidden">
+            <!-- Background round image (absolute) -->
+            <img
+              class="h-[270px] w-[282px] absolute top-[-140px] left-[150px]"
+              src="./assets/icons/about-third-round.png"
+              alt=""
+            />
+          
+            <!-- Map icon aligned right -->
+            <div class="flex justify-end relative z-10">
+              <img
+                class="h-[57px] w-[44px]"
+                src="./assets/icons/map.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>

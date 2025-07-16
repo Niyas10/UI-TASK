@@ -1,0 +1,46 @@
+:root {
+  --primary: rgba(30, 30, 30, 1);
+  --secondary: rgba(118, 118, 118, 1);
+  --third: rgba(253, 253, 253, 1);
+  --background: rgba(251, 252, 252, 1);
+  --custom-border: rgba(0, 0, 0, 1);
+  --letter-spacing-tight: 0.02em;
+}
+
+@font-face {
+  font-family: "syne-medium";
+  src: url("../fonts/Syne-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "syne-semibold";
+  src: url("../fonts/Syne-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "syne-bold";
+  src: url("../fonts/Syne-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "syne-extrabold";
+  src: url("../fonts/Syne-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+body {
+  font-family: "syne", sans-serif;
+  background-color: rgba(239, 239, 239, 1);
+  padding: 20px;
+}
+
+.border-custom {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+
+
+

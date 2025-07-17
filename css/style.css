@@ -40,7 +40,18 @@ body {
 .border-custom {
   border: 1px solid rgba(0, 0, 0, 1);
 }
+.ourservice-background {
+  background-image: url("../images/our-service-bg.png");
+  background-color: rgba(0, 0, 0, 0.9); /* black with 70% opacity */
+  background-size: cover;
 
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 

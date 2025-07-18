@@ -7,416 +7,351 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css" />
 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
     <title>IROID</title>
   </head>
   <body>
 
 
- <section
-      class="bg-[var(--background)] p-[30px] rounded-[45px] relative overflow-hidden"
-    >
- 
+    <section class="bg-[var(--background)] p-[15px] md:p-[30px] custom-padding rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
+      <!-- Background SVG -->
       <img
         src="./assets/icons/Landing-black.svg"
         alt=""
         class="absolute top-0 left-0 w-[537px] z-0"
       />
-
-      
+    
+      <!-- NAVBAR -->
       <nav class="flex justify-between items-center z-10 relative">
+        <!-- Logo -->
         <div>
-          <img class="h-[51px] w-[176px]" src="./images/Logo.svg" alt="" />
+          <img class=" h-[50px] w-[150px] md:h-[60px] md:w-[200px]  lg:h-[51px] lg:w-[176px] nav-logo" src="./images/Logo.svg" alt="" />
         </div>
-
-        <div>
-          <ul class="flex gap-[40px]">
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Agency
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Services
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Works
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Careers
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Technologies
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Testrimonials
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Contact
-            </li>
-            <li
-              class="text-[16px] leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]"
-            >
-              Blog
-            </li>
+    
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex">
+          <ul class="flex gap-[40px] nav-custom-gap">
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Agency</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Services</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Works</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Careers</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Technologies</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Testrimonials</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Contact</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Blog</li>
           </ul>
         </div>
-
-        <div class="flex gap-[20px]">
+    
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex gap-[20px] nav-button-gap">
           <button
-            class="rounded-[28px] border border-[var(--custom-border)] py-[13px] tracking-[0.02em] px-[24px] leading-[100%] font-[syne-medium]"
+            class="rounded-[28px] nav-buttom-padding nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] font-[syne-medium]"
           >
             Get Quote
           </button>
-
           <button
-            class="rounded-[28px] border border-[var(--custom-border)] py-[13px] px-[24px] leading-[100%] tracking-[0.02em] flex gap-[10px] items-center text-[16px] font-[syne-medium]"
+            class="rounded-[28px] nav-buttom-padding nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] flex gap-[10px] items-center font-[syne-medium]"
           >
             Hire a Developer
-            <img
-              class="h-[12px] w-[12px]"
-              src="./assets/icons/nav-button-icon.svg"
-              alt=""
-            />
+            <img class="h-[12px] w-[12px]" src="./assets/icons/nav-button-icon.svg" alt="" />
+          </button>
+        </div>
+    
+        <!-- Hamburger for Mobile -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-toggle" class="text-[var(--primary)]">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
       </nav>
+    
 
-  
+    
+      <!-- Right Side Text -->
       <div class="flex justify-end mt-[50px] z-10 relative">
-        <p
-          class="text-[24px] font-[syne-medium] leading-[120%] text-[var(--primary)]"
-        >
+        <p class=" text-[14px] md:text-[18px] lg:text-[24px] landing-right-text font-[syne-medium] leading-[120%] text-[var(--primary)]">
           Transform your brand, unleash the <br />
           power of digital with us
         </p>
       </div>
-
-      
+    
+      <!-- Hero Grid -->
       <div class="grid grid-cols-12 gap-[30px] mt-[20px] relative z-10">
-     
-        <div class="col-span-8 grid gap-[10px]">
-          <div class="flex justify-end mr-[200px]">
+        <div class="col-span-8 md:col-span-8 grid gap-[10px]">
+          <div class="flex justify-end  mr-[10px] md:mr-[100px] lg:mr-[200px]">
             <div>
-              <img
-                class="w-[106px] h-[106px]"
-                src="./assets/icons/blackstar.svg"
-                alt=""
-              />
-              <img
-                class="w-[42px] h-[42px] ml-[50px]"
-                src="./assets/icons/blackstar.svg"
-                alt=""
-              />
+              <img class=" w-[30px] h-[30px]  md:w-[70px] md:h-[70px] lg:w-[106px] lg:h-[106px] landing-top-star" src="./assets/icons/blackstar.svg" alt="" />
+              <img class=" w-[20px] h-[20px]  md:w-[36px] md:h-[36px]  lg:w-[42px] lg:h-[42px] ml-[30px] md:ml-[50px] landing-bottom-star" src="./assets/icons/blackstar.svg" alt="" />
             </div>
           </div>
-
-          <h1
-            class="text-[98px] leading-[109px] text-[var(--primary)] tracking-[0.02em] font-[syne-medium]"
-          >
-            Crafting New <br />
-            Digital Experiences
+          <h1 class=" text-[36px] md:text-[45px] lg:text-[98px] landing-main-text leading-[36px] md:leading-[60px] lg:leading-[109px] text-[var(--primary)] tracking-[0.02em] font-[syne-medium]">
+            Crafting New <br  /> Digital Experiences
           </h1>
-
-          <p
-            class="text-[var(--primary)] text-[24px] leading-[100%] tracking-[0.02em] font-[syne-medium]"
-          >
+          <p class="text-[var(--primary)] landing-page-description text-[14px] md:text-[18px] lg:text-[24px] mt-[20px] leading-[100%] tracking-[0.02em] font-[syne-medium]">
             We’ve got you covered for all your IT needs with our perfectly
             Crafted <br />
             cutting - edges solutions
           </p>
         </div>
-
     
-        <div class="col-span-4 relative z-0">
+        <div class="col-span-4 md:col-span-4 relative z-0">
+          <img class="absolute right-[-100px] h-[700px] w-[700px] object-contain" src="./images/Landing-ball.png" alt="Landing Ball" />
+        </div>
+      </div>
+    
+      <!-- Company Logo Slider -->
+      <div class=" py-[10px] px-[20px]  md:py-[15px] md:px-[25px]  lg:py-[20px] lg:px-[30px] rounded-[10px] md:rounded-[20px] lg:rounded-[30px] mt-[20px] z-10 relative bg-[rgba(245,245,245,0.5)] backdrop-blur-[12px]">
+        <p class="text-[12px] md:text-[14px] text-[var(--secondary)] mb-[10px]">You’re in good company</p>
+        <div class="swiper logoSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/icons/mozilla.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/uber.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/google.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/alpaca.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/asana.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/asana.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/asana.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/icons/paypal.svg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+   <section class="pt-[30px]">
+  <div class="grid grid-cols-12 gap-[30px]">
+    <!-- LEFT CONTENT -->
+    <div class="col-span-12 lg:col-span-7 bg-[var(--background)] custom-padding p-[20px] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
+      <div class="flex justify-between">
+        <!-- Title + Stars -->
+        <div class="flex gap-[20px] items-end">
+          <p class="text-[20px] lg:text-[24px] text-[var(--primary)] font-[syne-medium]">
+            About Us
+          </p>
+          <div>
+            <img
+              class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px]"
+              src="./assets/icons/blackstar.svg"
+              alt=""
+            />
+            <img
+              class="h-[14px] w-[14px] lg:w-[18px] lg:h-[18px]"
+              src="./assets/icons/blackstar.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Ball Image -->
+        <div>
           <img
-            class="absolute right-[-100px] h-[700px] w-[700px] object-contain"
-            src="./images/Landing-ball.png"
-            alt="Landing Ball"
+            class="h-[100px] w-[100px] lg:w-[146px] lg:h-[146px]"
+            src="./assets/icons/about-section-ball.png"
+            alt=""
           />
         </div>
       </div>
 
-     
-      <div
-        class="py-[20px] px-[30px] rounded-[30px] mt-[20px] z-10 relative bg-[rgba(245,245,245,0.5)] backdrop-blur-[12px]"
-      >
-        <p class="text-[14px] text-[var(--secondary)] mb-[5px]">
-          You’re in good company
+      <!-- Main Heading + Description -->
+      <div class="mt-[20px] z-10 relative mb-[180px]">
+        <h1 class="text-[28px] md:text-[38px] lg:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[70px] text-[var(--primary)] font-[syne-medium]">
+          #<span class="text-[49px] md:text-[69] lg:text-[99px] font-[syne-medium]">1</span> IT Consulting
+          Company in
+          <span class="text-[28px] md:text-[38px] lg:text-[48px] font-[syne-extrabold]"> USA</span>
+        </h1>
+        <p class="text-[14px] text-[16px] lg:text-[18px] font-[syne-medium] mt-[10px] text-[var(--secondary)] tracking-[2%] leading-[24px] md:leading-[28px] lg:leading-[38px] mb-[40px] md:mb-[60px] lg:mb-[80px]">
+          As a premier IT Company in UK, we prioritise delivering exceptional
+          services to clients across various industries. Over the years, we've
+          crafted websites, web applications, and mobile apps that enhance
+          customer engagement and drive revenue growth. We recognise that our
+          clients seek more than just digital products; they want effective
+          tools to connect with their audiences and grow their businesses. To
+          meet the diverse needs of our clients, we offer a wide range of
+          services, including web design and development, e-commerce solutions,
+          mobile app development, digital marketing, content marketing, ERP and
+          CRM development, and more. Our Mobile App Developers UK is committed
+          to providing high-quality services at best efficient costs.
         </p>
+      </div>
 
-        <div class="flex justify-between flex-wrap gap-[20px]">
-          <img src="./assets/icons/mozilla.svg" alt="" />
-          <img src="./assets/icons/uber.svg" alt="" />
-          <img src="./assets/icons/google.svg" alt="" />
-          <img src="./assets/icons/alpaca.svg" alt="" />
-          <img src="./assets/icons/asana.svg" alt="" />
-          <img src="./assets/icons/asana.svg" alt="" />
-          <img src="./assets/icons/asana.svg" alt="" />
-          <img src="./assets/icons/paypal.svg" alt="" />
+      <!-- Background Round -->
+      <div class="absolute left-[-50px] bottom-[-60px] lg:left-[-90px] lg:bottom-[-100px] z-0">
+        <img src="./assets/icons/about-round.png" alt="" class="h-[200px] md:h-[240px] lg:h-[280px] w-auto" />
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="col-span-12 lg:col-span-5 flex flex-col gap-[15px] md:gap-[30px]">
+      <!-- Box 1 -->
+      <div class="bg-black rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative p-[20px] md:p-[30px] overflow-hidden">
+        <img
+          src="./assets/icons/about-section-ball.png"
+          alt=""
+          class="h-[100px] w-[100px] lg:w-[146px] lg:h-[146px] absolute top-0 right-0 translate-x-[25%] translate-y-[-25%] z-0"
+        />
+        <div class="relative z-10">
+          <p class="font-[syne-medium] text-[50px] md:text-[100px] lg:text-[150px] text-[var(--third)] leading-none">
+            +8o
+          </p>
+        </div>
+        <div class="flex justify-between items-end gap-[10px] mt-[20px] md:mt-[0px]">
+          <p class="text-[14px] md:text-[21px] font-[syne-semibold] leading-[28px] md:leading-[31px] tracking-[2%] text-[var(--third)]">
+            We’re a large yet tightly-knit <br />
+            group of skilled & creative peeps
+          </p>
+          <img
+            class="h-[30px] w-[44px] md:h-[40px] md:w-[54px]"
+            src="./assets/icons/about-first.svg"
+            alt=""
+          />
         </div>
       </div>
-    </section> 
 
-
-   <section class="pt-[30px]">
-      <div class="grid grid-cols-12 gap-[30px]">
-        
-        <div
-          class="col-span-7 bg-[var(--background)] p-[20px] rounded-[45px] relative overflow-hidden"
-        >
-       
-          <div class="flex justify-between">
-            <div class="flex gap-[20px] items-end">
-              <p class="text-[24px] text-[var(--primary)] font-[syne-medium]">
-                About Us
-              </p>
-              <div>
-                <img
-                  class="w-[44px] h-[44px]"
-                  src="./assets/icons/blackstar.svg"
-                  alt=""
-                />
-                <img
-                  class="w-[18px] h-[18px]"
-                  src="./assets/icons/blackstar.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-    
-            <div>
-              <img
-                class="w-[146px] h-[146px]"
-                src="./assets/icons/about-section-ball.png"
-                alt=""
-              />
-            </div>
-          </div>
-    
-       
-          <div class="mt-[20px] z-10 relative mb-[180px]">
-            <h1
-              class="text-[48px] leading-[80px] text-[var(--primary)] font-[syne-medium]"
-            >
-              #<span class="text-[99px] font-[syne-medium]">1</span> IT Consulting
-              Company in
-              <span class="text-[48px] font-[syne-extrabold]"> USA</span>
-            </h1>
-            <p
-              class="text-[18px] font-[syne-medium] text-[var(--secondary)] tracking-[2%] leading-[41px] mb-[80px]"
-            >
-              As a premier IT Company in UK, we prioritise delivering exceptional
-              services to clients across various industries. Over the years, we've
-              crafted websites, web applications, and mobile apps that enhance
-              customer engagement and drive revenue growth. We recognise that our
-              clients seek more than just digital products; they want effective
-              tools to connect with their audiences and grow their businesses. To
-              meet the diverse needs of our clients, we offer a wide range of
-              services, including web design and development, e-commerce solutions,
-              mobile app development, digital marketing, content marketing, ERP and
-              CRM development, and more. Our Mobile App Developers UK is committed
-              to providing high-quality services at best efficient costs.
-            </p>
-          </div>
-    
-          <div class="absolute left-[-90px] bottom-[-100px] z-0">
-            <img
-              src="./assets/icons/about-round.png"
-              alt=""
-              class="h-[280px] w-auto"
-            />
-          </div>
+      <!-- Box 2 -->
+      <div class="bg-[var(--background)] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative p-[20px] md:p-[30px] overflow-hidden">
+        <div>
+          <img class="h-[30px] w-[44px] md:h-[40px] md:w-[54px" src="./assets/icons/about-second.svg" alt="" />
         </div>
-    
-  
-        <div class="col-span-5  flex flex-col gap-[30px]">
-     
-          <div class="bg-black rounded-[45px] relative p-[30px] overflow-hidden">
+        <div class="flex justify-between mt-[20px] md:mt-[0px]">
+          <p class="font-[syne-medium] text-[40px] md:text-[60px] lg:text-[90px] text-[var(--primary)] leading-none">
+            +180<span class="text-[21px] font-[syne-semibold] leading-[31px] tracking-[2%]">
+              clients
+            </span>
+          </p>
+          <div>
             <img
-              src="./assets/icons/about-section-ball.png"
-              alt=""
-              class="h-[146px] w-[146px] absolute top-0 right-0 translate-x-[25%] translate-y-[-25%] z-0"
-            />
-            <div class="relative z-10">
-              <p
-                class="font-[syne-medium] text-[150px] text-[var(--third)] leading-none"
-              >
-                +8o
-              </p>
-            </div>
-            <div class="flex justify-between">
-              <p
-                class="text-[21px] font-[syne-semibold] leading-[31px] tracking-[2%] text-[var(--third)]"
-              >
-                We’re a large yet tightly-knit <br />
-                group of skilled & creative peeps
-              </p>
-              <img
-                class="h-[40px] w-[54px]"
-                src="./assets/icons/about-first.svg"
-                alt=""
-              />
-            </div>
-          </div>
-    
-        
-          <div class="bg-[var(--background)] rounded-[45px] relative p-[30px] overflow-hidden">
-            <div>
-              <img
-                class="h-[44px] w-[55px]"
-                src="./assets/icons/about-second.svg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between">
-              <p
-                class="font-[syne-medium] text-[90px] text-[var(--primary)] leading-none"
-              >
-                +180<span
-                  class="text-[21px] font-[syne-semibold] leading-[31px] tracking-[2%]"
-                  >clients</span
-                >
-              </p>
-              <div>
-                <img
-                  class="w-[257px] h-[259px] absolute right-[-85px] bottom-[-100px]"
-                  src="./assets//icons/about-second-icon.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-    
-    
-          <div class="flex-1 bg-black rounded-[45px] relative p-[30px] overflow-hidden flex flex-col justify-end">
-            <img
-              class="h-[270px] w-[282px] absolute top-[-140px] left-[150px]"
-              src="./assets/icons/about-third-round.png"
+              class="w-[257px] h-[259px] absolute right-[-85px] bottom-[-100px]"
+              src="./assets//icons/about-second-icon.png"
               alt=""
             />
-            <div class="flex justify-end relative z-10">
-              <img
-                class="h-[44px] w-[57px]"
-                src="./assets/icons/map.svg"
-                alt=""
-              />
-            </div>
-            <div class="relative z-10 mt-[80px]">
-              <p class="text-[var(--third)] text-[21px] font-[syne-medium]">
-                Proudly located in
-              </p>
-              <p class="text-[var(--third)] text-[33px] font-[syne-extrabold]">
-                USA <span class="text-[var(--third)] text-[46px] font-[syne-medium]">Hawaii</span>
-              </p>
-            </div>
           </div>
         </div>
       </div>
-    </section> 
+
+      <!-- Box 3 -->
+      <div class="flex-1 bg-black rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative p-[20px] md:p-[30px] overflow-hidden flex flex-col justify-end">
+        <img
+          class="h-[270px] w-[282px] absolute top-[-140px] left-[150px]"
+          src="./assets/icons/about-third-round.png"
+          alt=""
+        />
+        <div class="flex justify-end relative z-10">
+          <img class="h-[44px] w-[57px]" src="./assets/icons/map.svg" alt="" />
+        </div>
+        <div class="relative z-10 mt-[80px]">
+          <p class="text-[var(--third)] text-[18px] md;text-[21px] font-[syne-medium]">
+            Proudly located in
+          </p>
+          <p class="text-[var(--third)] text-[28px] md:text-[33px] font-[syne-extrabold]">
+            USA <span class="text-[var(--third)] text-[36px] md:text-[46px] font-[syne-medium]">Hawaii</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     
     
     <section class="pt-[30px]">
-      <div class="ourservice-background rounded-[45px] p-[60px] py-[100px] overflow-hidden">
+      <div class="ourservice-background rounded-[20px] md:rounded-[30px] lg:rounded-[45px] p-[20px] lg:p-[60px] py-[20px] lg:py-[100px] overflow-hidden">
         <div class="grid grid-cols-12 gap-[30px]">
           
           <!-- Left Column -->
-          <div class="col-span-5 relative">
-            <div class="flex ml-[120px] items-end gap-[20px]">
-              <p class="text-[var(--third)] text-[21px] font-[syne-medium]">Our Services</p> 
+          <div class="col-span-12 md:col-span-5 relative">
+            <div class="flex lg:ml-[120px] justify-start  items-end gap-[20px]">
+              <p class="text-[var(--third)] text-[20px] lg:text-[24px]  font-[syne-medium]">Our Services</p> 
               <div>
-                <img class="h-[44px] w-[44px]" src="./assets/icons/whitestar.svg" alt="">
-                <img class="h-[18px] w-[18px] ml-[30px]" src="./assets/icons/whitestar.svg" alt="">
+                <img class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px]" src="./assets/icons/whitestar.svg" alt="">
+                <img class="h-[14px] w-[14px] lg:w-[18px] lg:h-[18px]" src="./assets/icons/whitestar.svg" alt="">
               </div>
             </div>
-            <div class="relative">
-              <img class="h-[450px] w-[450px] top-[130px] left-[-30px] absolute" src="./assets/icons/our-service-star.svg" alt="">
+            <div class="relative hidden md:block">
+              <img class=" lg:h-[450px] lg;w-[450px] top-[130px] left-[-30px] absolute" src="./assets/icons/our-service-star.svg" alt="">
             </div>
           </div>
     
           <!-- Right Column -->
-          <div class="col-span-7">
-            <ul class="flex flex-col gap-[20px]">
+          <div class="col-span-12 md:col-span-7">
+            <ul class="flex flex-col  items-start  lg:items-start gap-[20px]">
               
-              <li class="flex items-center gap-[20px]">
+              <li class="flex items-center gap-[10px] md:gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   E Commerce Development
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   Hire Software Developer
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   Digital Marketing
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   ERP Development
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   Website Development
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   Mobile App Development
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[38px]"
+                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
                   style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                 >
                   UI/UX Design
                 </span>
-                <img class="h-[50px] w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
     
             </ul>
@@ -429,24 +364,24 @@
     
     
     <section class="pt-[30px] relative">
-      <div class="relative rounded-[45px] bg-[var(--background)] py-[40px] px-[80px] flex items-center justify-between overflow-hidden">
+      <div class="relative rounded-[20px] md:rounded-[30px] lg:rounded-[45px] bg-[var(--background)] py-[40px] px-[20px] md:px-[60px] lg:px-[80px] flex items-center justify-between overflow-hidden">
     
         <!-- Far Left: Stars -->
-        <div class="flex flex-col gap-[20px]">
-          <img class="h-[106px] w-[106px]" src="./assets/icons/blackstar.svg" alt="">
-          <img class="h-[42px] w-[42px]" src="./assets/icons/blackstar.svg" alt="">
+        <div class="flex flex-col gap-[20px] hidden md:block">
+          <img class="md:h-[70px] md:w-[70px] lg:h-[106px] lg;w-[106px]" src="./assets/icons/blackstar.svg" alt="">
+          <img class="md:h-[40px] w-[40px] lg:h-[42px] lg:w-[42px]" src="./assets/icons/blackstar.svg" alt="">
         </div>
     
         <!-- Center: Our Works text -->
         <div class="flex-1 flex justify-center">
-          <p class="text-[64px] md:text-[96px] lg:text-[128px] tracking-[2px] font-[syne-extrabold] whitespace-nowrap text-center">
+          <p class="text-[26px] md:text-[54px] lg:text-[64px]  lg:text-[128px] tracking-[2px] font-[syne-extrabold] whitespace-nowrap text-center">
             Our Works
           </p>
         </div>
     
         <!-- Far Right: Decorative Spiral -->
         <img 
-          class="h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[456px] lg:w-[456px] absolute bottom-[200px] right-[-280px] translate-y-1/2 pointer-events-none select-none" 
+          class="h-[300px]  hidden md:block w-[300px] md:h-[400px] md:w-[400px] lg:h-[456px] lg:w-[456px] absolute bottom-[200px] right-[-280px] translate-y-1/2 pointer-events-none select-none" 
           src="./assets/icons/our-work-round.png" 
           alt=""
         />
@@ -460,13 +395,13 @@
         <!-- Top Grid Row: 7 / 5 -->
         <div class="grid grid-cols-12 gap-[20px]">
           <!-- Left (7 cols) -->
-          <div class="col-span-12 md:col-span-7 p-[30px] flex rounded-[42px]" style="background-color: #d6d4c5;">
+          <div class="col-span-12 lg:col-span-7 p-[20px] md;p-[30px] flex flex-col md:flex-row rounded-[42px]" style="background-color: #d6d4c5;">
               <div  class="flex  flex-col justify-end">
-                <h1 class="text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-                <p class="text-[18px] font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
+                <h1 class="text-[18px] md:text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+                <p class="text-[14px] md:text-[18px] font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
                 <div class="flex gap-[10px] mt-[10px]">
-                  <button class="text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[10px] px-[26px]">Healthcare</button>
-                  <button class="text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[10px] px-[26px]">websites</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] py-[5px] px-[20px]  md:py-[10px] md:px-[26px] font-[syne-medium border-custom ">Healthcare</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px] md:py-[10px] md:px-[26px]">websites</button>
                 </div>
               </div>
               <div >
@@ -475,7 +410,7 @@
           </div>
     
           <!-- Right (5 cols) -->
-          <div class="col-span-12 md:col-span-5 p-[30px] rounded-[42px] flex flex-col justify-between gap-[30px]" style="background-color: #161618;">
+          <div class="col-span-12 lg:col-span-5 p-[30px] rounded-[42px] flex flex-col justify-between gap-[30px]" style="background-color: #161618;">
             <!-- Image at the top -->
             <div class="flex justify-center">
               <img src="./images/oruwork-two.png" alt="">
@@ -483,15 +418,15 @@
           
             <!-- Text content at the bottom -->
             <div class="flex flex-col justify-end">
-              <h1 class="text-[20px] tracking-[2px] text-[var(--third)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-              <p class="text-[18px] font-[syne-medium] text-[var(--third)] tracking-[2px] mt-[10px]">
+              <h1 class="text-[18px] md:text-[20px] tracking-[2px]  text-[var(--third)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+              <p class="text-[14px] md:text-[18px] font-[syne-medium] text-[var(--third)] tracking-[2px] mt-[10px]">
                 Elevating Global Presence with Captivating <br> Design. DentCare Global is a we...
               </p>
               <div class="flex gap-[10px] mt-[10px]">
-                <button class="text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[10px] px-[26px]">
+                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Healthcare
                 </button>
-                <button class="text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[10px] px-[26px]">
+                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]]">
                   Websites
                 </button>
               </div>
@@ -500,15 +435,15 @@
           
         </div>
 
-        <div class="grid grid-cols-12 gap-[20px] pt-[30px]">
+        <div class="grid grid-cols-12 gap-[20px] pt-[30px] ">
           <!-- Left (7 cols) -->
-          <div class="col-span-12 md:col-span-6 p-[30px] flex rounded-[42px]" style="background-color: rgba(252, 252, 250, 1);">
+          <div class="col-span-12 lg:col-span-6 p-[30px] flex-col md:flex-row  flex rounded-[42px]" style="background-color: rgba(252, 252, 250, 1);">
               <div  class="flex  flex-col justify-end">
-                <h1 class="text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-                <p class="text-[18px] font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
+                <h1 class="text-[18px] md:text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+                <p class="text-[18px] md:text-[20px]font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
                 <div class="flex gap-[10px] mt-[10px]">
-                  <button class="text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[10px] px-[26px]">Healthcare</button>
-                  <button class="text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[10px] px-[26px]">websites</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">Healthcare</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">websites</button>
                 </div>
               </div>
               <div >
@@ -517,7 +452,7 @@
           </div>
     
           <!-- Right (5 cols) -->
-          <div class="col-span-12 md:col-span-6 p-[30px] rounded-[42px] flex flex-col justify-between gap-[30px]" style="background-color: rgba(243, 243, 243, 1);">
+          <div class="col-span-12 lg:col-span-6 p-[30px] rounded-[42px] flex flex-col justify-between gap-[30px]" style="background-color: rgba(243, 243, 243, 1);">
             <!-- Image at the top -->
             <div class="flex justify-end">
               <img class="w-[400px]" src="./images/ourwork-four.png" alt="">
@@ -525,15 +460,15 @@
           
             <!-- Text content at the bottom -->
             <div class="flex flex-col justify-end">
-              <h1 class="text-[20px] tracking-[2px]  text-[var(--primary)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-              <p class="text-[18px] font-[syne-medium]  text-[var(--primary)] tracking-[2px] mt-[10px]">
+              <h1 class="text-[18px] md:text-[20px] tracking-[2px]  text-[var(--primary)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+              <p class="text-[18px] md:text-[20px] font-[syne-medium]  text-[var(--primary)] tracking-[2px] mt-[10px]">
                 Elevating Global Presence with Captivating <br> Design. DentCare Global is a we...
               </p>
               <div class="flex gap-[10px] mt-[10px]">
-                <button class="text-[14px] rounded-[28px] border border-custom text-[var(--primary)] font-[syne-medium] py-[10px] px-[26px]">
+                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-custom text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Healthcare
                 </button>
-                <button class="text-[14px] rounded-[28px] border border-custom  text-[var(--primary)] font-[syne-medium] py-[10px] px-[26px]">
+                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-custom  text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Websites
                 </button>
               </div>
@@ -551,73 +486,74 @@
     <section class="pt-[30px] relative overflow-hidden">
 
       <!-- Bottom Right Round PNG (Spring Base) -->
-      <div class="absolute bottom-[500px] right-[-100px] z-[10]">
+      <div class="absolute hidden lg:block bottom-[500px] right-[-100px] z-[10]">
         <img class="w-[270px] h-[250px]" src="./assets/icons/about-third-round.png" alt="">
       </div>
     
       <!-- Main Container with Background SVG INSIDE -->
-      <div class="bg-[#151517] overflow-hidden rounded-[45px] p-[30px] grid grid-cols-12 relative z-[1]">
+      <div class="bg-[#151517] overflow-hidden p-[15px] md:p-[30px] custom-padding rounded-[20px] md:rounded-[30px] lg:rounded-[45px] grid grid-cols-12 relative z-[1]">
     
         <!-- Background SVG Centered Inside Card -->
-        <div class="absolute inset-0 flex justify-center items-center z-[-1] left-[250px]  bottom-[500px] pointer-events-none">
+        <div class="absolute  inset-0 flex justify-center items-center z-[-1] left-[250px]  bottom-[500px] pointer-events-none">
           <img class="h-[800px]" src="./assets/icons/why-us-line.svg" alt="">
         </div>
     
         <!-- Left Column -->
-        <div class="col-span-12 md:col-span-7 px-[50px] relative pb-[160px]">
+        <div class="col-span-12 md:col-span-7 px-[0px] md;px-[50px] relative pb-[60px] md:pb-[100px] lg:pb-[160px]">
           
           <!-- Top Row: Label + Stars -->
           <div class="flex items-end gap-[10px]">
-            <p class="text-[24px] font-[syne-medium] tracking-[2px] text-[var(--third)]">Why US</p>
+            <p class="text-[20px] lg:text-[24px] mt-[20px] md:mt-[0px] font-[syne-medium] tracking-[2px] text-[var(--third)]">Why US</p>
             <div>
-              <img class="h-[44px] w-[44px]" src="./assets/icons/whitestar.svg" alt="">
-              <img class="ml-[30px] h-[18px] w-[18px]" src="./assets/icons/whitestar.svg" alt="">
+              <img             class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px] " src="./assets/icons/whitestar.svg" alt="">
+              <img               class="h-[14px] w-[14px] lg:w-[18px] lg:h-[18px]"
+              src="./assets/icons/whitestar.svg" alt="">
             </div>
           </div>
     
           <!-- Heading + Paragraph -->
-          <h1 class="text-[44px] mt-[50px] font-[syne-semibold] leading-[50px] text-[var(--third)] tracking-[2px] mb-[10px]">
+          <h1 class="text-[28px] md:text-[34px] lg:text-[44px] mt-[50px] font-[syne-semibold] leading-[34px]  md:leading-[44px] lg:leading-[50px] text-[var(--third)] tracking-[2px] mb-[10px]">
             Why Choose <span class="font-[syne-extrabold]">iROID </span><br> as an IT Partner?
           </h1>
           
-          <p class="mb-[20px] w-[80%]" style="color: rgba(151, 151, 151, 1);">
+          <p class="mb-[20px] w-[100%] md:w-[80%] text-[14px] lg:text-[18px] leading-[22px] md:leading-[29px] " style="color: rgba(151, 151, 151, 1);">
             Struggling to find top-notch talent for your tech innovations? Say hello to High-Performance Squads, the game-changer you've been waiting for!
           </p>
     
-          <p class="w-[80%] text-[18px] leading-[29px] tracking-[2%]" style="color: rgba(151, 151, 151, 1);">
+          <p class="w-[100%] md:w-[80%] text-[14px]  lg:text-[18px] leading-[22px] md:leading-[29px] tracking-[2%]" style="color: rgba(151, 151, 151, 1);">
             We specialise in creating visually stunning mobile and web designs tailored to different industries, ensuring they capture the target audience's attention. From eye-catching web designs and sophisticated e-commerce platforms to seamless mobile applications and strategic digital marketing campaigns, our portfolio addresses every aspect of modern business requirements. As one of the Top <span class="text-[18px] text-[var(--third)] font-[syne-bold] leading-[29px]">IT Companies in USA</span>, our service offerings have evolved in response to the changing demands of our clients, resulting in a comprehensive array of solutions across multiple domains.
           </p>
     
           <!-- Decorative Spring Image -->
-          <div class="absolute left-[-100px] bottom-[-130px] -rotate-[-40deg] overflow-hidden">
+          <div class="absolute hidden md:block left-[-100px] md:bottom-[-165px] lg:bottom-[-130px] -rotate-[-40deg] overflow-hidden">
             <img class="h-[278px] w-[278px]" src="./images/why-us-spring.png" alt="">
           </div>
         </div>
     
         <!-- Right Column -->
-        <div class="col-span-12 md:col-span-5 p-[30px] flex flex-col gap-[20px] min-h-[650px]">
-          <div class="bg-[rgba(44,44,44,1)] rounded-[28px] py-[30px] px-[40px] flex-1">
+        <div class="col-span-12 md:col-span-5 p-[0px] lg:p-[30px] flex flex-col gap-[20px] min-h-[650px]">
+          <div class="bg-[rgba(44,44,44,1)] rounded-[28px] py-[15px] px-[20px] lg:py-[30px] lg:px-[40px] flex-1">
             <img src="./assets/icons/why-us-1.svg" alt="">
             <p class="text-[18px] font-[syne-bold] text-[var(--third)] mt-[10px]">Security is Non-Negotiable</p>
             <p class="text-[14px] font-[syne-medium] leading-[100%] tracking-[2px] mt-[10px]" style="color: rgba(151, 151, 151, 1);">
               Trust is key. At iROID, we prioritize your security, enabling you to focus on your strengths.
             </p>
           </div>
-          <div class="bg-[rgba(44,44,44,1)] rounded-[28px] py-[30px] px-[40px] flex-1">
+          <div class="bg-[rgba(44,44,44,1)] rounded-[28px]  py-[15px] px-[20px] lg:py-[30px] lg:px-[40px] flex-1">
             <img src="./assets/icons/why-us-2.svg" alt="">
             <p class="text-[18px] font-[syne-bold] text-[var(--third)] mt-[10px]">Global Expertise, Local Presence</p>
             <p class="text-[14px] font-[syne-medium] leading-[100%] tracking-[2px] mt-[10px]" style="color: rgba(151, 151, 151, 1);">
               We're all about building meaningful connections, not just business deals.
             </p>
           </div>
-          <div class="bg-[rgba(44,44,44,1)] rounded-[28px] py-[30px] px-[40px] flex-1">
+          <div class="bg-[rgba(44,44,44,1)] rounded-[28px]  py-[15px] px-[20px] lg:py-[30px] lg:px-[40px]  flex-1">
             <img src="./assets/icons/why-us-3.svg" alt="">
             <p class="text-[18px] font-[syne-bold] text-[var(--third)] mt-[10px]">Innovation is in our DNA</p>
             <p class="text-[14px] font-[syne-medium] leading-[100%] tracking-[2px] mt-[10px]" style="color: rgba(151, 151, 151, 1);">
               We don’t just follow trends. We set them. At iROID, innovation isn’t a choice; it’s our core principle.
             </p>
           </div>
-          <div class="bg-[rgba(44,44,44,1)] rounded-[28px] py-[30px] px-[40px] flex-1">
+          <div class="bg-[rgba(44,44,44,1)] rounded-[28px]  py-[15px] px-[20px] lg:py-[30px] lg:px-[40px]  flex-1">
             <img src="./assets/icons/why-us-4.svg" alt="">
             <p class="text-[18px] font-[syne-bold] text-[var(--third)] mt-[10px]">Partnership-driven</p>
             <p class="text-[14px] font-[syne-medium] leading-[100%] tracking-[2px] mt-[10px]" style="color: rgba(151, 151, 151, 1);">
@@ -631,9 +567,538 @@
     
     
     
+    <section class="pt-[30px]">
+      <div class="bg-[var(--background)] p-[15px] md:p-[30px] custom-padding rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
+        <div class="flex gap-[10px] items-end">
+          <p class="text-[20px] lg:text-[24px] font-[syne-medium] tracking-[2px] text-[var(--primary)]">Why US</p>
+          <div>
+            <img class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px]" src="./assets/icons/blackstar.svg" alt="">
+            <img class="ml-[10px] md:ml-[30px] h-[14px] w-[14px] lg:w-[18px] lg:h-[18px]" src="./assets/icons/blackstar.svg" alt="">
+          </div>
+        </div>
+    
+        <h1 class="text-[28px] md:text-[34px] lg:text-[44px] font-[syne-medium] text-[var(--primary)] tracking-[2px] leading-[100%] mt-[30px]">
+          Our goal is to ensure your ascension to the <br> very pinnacle of success —
+        </h1>
+    
+        <h2 class="text-[28px] lg:text-[34px] font-[syne-bold] tracking-[2px] leading-[100%] text-[var(--primary)] mt-[30px] md:mt-[100px]">
+          Your framework, your way.
+        </h2>
+    
+        <p class="text-[14px] md;text-[18px] font-[syne-medium] tracking-[2px] leading-[100%] text-var(--third) mt-[30px]">
+          Choose your framework with our guidance and best practices - <br> let’s build robust, innovative apps and sites together.
+        </p>
+    
+        <!-- Box Image Positioned to the Right -->
+        <div class="absolute hidden lg:block right-[-130px] top-[75%] translate-y-[-50%] rotate-[-12.21deg] z-[1]">
+          <img class="w-[800px] h-[800px]" src="./images/box.png" alt="">
+        </div>
+    
+        <div class="bg-[#151517] mt-[30px] md;mt-[80px] px-[10px] md:px-[40px] py-[50px] rounded-[30px] relative overflow-hidden">
+    
+          <div>
+            <!-- Background Line SVG Positioned Center -->
+            <div class="absolute hidden lg:block top-[85px] inset-0 bottom-[85px] flex justify-center z-[1] items-center z-0 pointer-events-none">
+              <img src="./assets/icons/frame-work-line.svg" alt="">
+            </div>
+    
+            <!-- Foreground Framework Tags -->
+            <div class="relative z-10 flex flex-wrap justify-start gap-[30px]">
+              <!-- Flutter -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Flutter</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Svelte -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Svelte</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Python -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Python</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- React -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px]21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">React</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Angular -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Angular</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-[30px]">
+            <!-- Background Line SVG Positioned Center -->
+            <div class="absolute hidden lg:block top-[85px] inset-0 flex justify-center z-[1] items-center z-0 pointer-events-none">
+              <img src="./assets/icons/frame-work-line.svg" alt="">
+            </div>
+    
+            <!-- Foreground Framework Tags -->
+            <div class="relative z-10 flex flex-wrap justify-start gap-[30px]">
+              <!-- Wordpress -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Wordpress</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Next Js -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Next Js</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Blade -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Blade</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+    
+              <!-- Angular -->
+              <div class="py-[6px] px-[10px] md:py-[13px] md;px-[21px] bg-white rounded-[28px] inline-block">
+                <div class="flex gap-[10px] items-center">
+                  <p class="text-[14px] md;text-[20px] font-[syne-extrabold]">Angular</p>
+                  <img class="w-[21px] h-[21px]" src="./assets/icons/backArrow.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="pt-[30px]">
+      <div class="grid  lg:grid-cols-2 gap-[20px] items-stretch">
+        <!-- LEFT BOX -->
+        <div class="bg-[rgba(21,21,23,1)] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] px-[15px] lg:px-[40px] py-[60px] flex flex-col justify-between relative overflow-hidden">
+          <h1 class="text-[28px] md:text-[34px] lg:text-[44px] font-[syne-bold] tracking-[2px] leading-[100%] text-[var(--third)]">
+            Hire Creative & <br> Dedicated People
+          </h1>
+          <div class="mt-[50px]">
+            <p class="text-[18px] lg:text-[24px] font-[syne-bold] leading-[100%] lg:leading-[29px] text-[var(--third)] w-[100%] md:w-[80%] tracking-[2px]">
+              Define your need - <span class="text-[14px] lg:text-[18px] font-[syne-medium]"> Share your developer needs, and we'll match you with the perfect fit. </span>
+            </p>
+            <p class="text-[18px] lg:text-[24px] font-[syne-bold] leading-[100%] lg:leading-[29px] text-[var(--third)] w-[100%] md:w-[80%] mt-[20px] tracking-[2px]">
+              Meet our team  - <span class="text-[14px] lg:text-[18px] font-[syne-medium]"> Share your developer needs, and we'll match you with the perfect fit. </span>
+            </p>
+            <p class="text-[18px] lg:text-[24px] font-[syne-bold] leading-[100%] lg:leading-[29px] text-[var(--third)] w-[100%] md:w-[80%] mt-[20px] tracking-[2px]">
+              Screening  - <span class="text-[14px] lg:text-[18px] font-[syne-medium]"> Share your developer needs, and we'll match you with the perfect fit. </span>
+            </p>
+            <p class="text-[18px] lg:text-[24px] font-[syne-bold] leading-[100%] lg:leading-[29px] text-[var(--third)] w-[100%] md:w-[80%] mt-[20px] tracking-[2px]">
+              Choose your developer - <span class="text-[14px] lg:text-[18px] font-[syne-medium]"> Share your developer needs, and we'll match you with the perfect fit. </span>
+            </p>
+            <p class="text-[18px] lg:text-[24px] font-[syne-bold] leading-[100%] lg:leading-[29px] text-[var(--third)] w-[100%] md:w-[80%] mt-[20px] tracking-[2px]">
+              Developing your app - <span class="text-[14px] lg:text-[18px] font-[syne-medium]"> Share your developer needs, and we'll match you with the perfect fit. </span>
+            </p>
+          </div>
+    
+          <button class="text-[12px] md:text-[14px] rounded-[28px] py-[5px] px-[20px]  md:py-[10px] md:px-[26px] border text-white  rounded-[28px] mt-[40px] self-start">
+            Hire Now
+          </button>
+    
+          <!-- Positioned about-second-icon.png slightly top-right -->
+          <img class="w-[299px] absolute top-[25px] right-[-130px] hidden md:block" src="./assets/icons/about-second-icon.png" alt="">
+        </div>
+    
+        <!-- RIGHT IMAGE matching left height -->
+        <div class="rounded-[20px] md:rounded-[30px] lg:rounded-[45px] h-full ">
+          <img class="w-full h-full object-cover rounded-[45px]" src="./images/hireNow.png" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="pt-[30px] hidden lg:block">
+      <div class="bg-[#161618] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] pl-[60px] overflow-hidden relative">
+        <div class="grid grid-cols-12 gap-[20px]">
+          
+          <!-- LEFT SIDE -->
+          <div class="col-span-4 mt-[150px]">
+            <div class="flex justify-end">
+              <img class="h-[87px] w-[87px]" src="./assets/icons/about-section-ball.png" alt="">
+            </div>
+    
+            <h1 class="text-[34px] font-[syne-bold] text-[var(--third)] tracking-[2px] leading-[100%] mt-[50px]">
+              Cloud Solutions, your way.
+            </h1>
+    
+            <p class="text-[18px] font-[syne-medium] leading-[29px] tracking-[2%] text-[var(--secondary)] mt-[20px]">
+              Unlock tailored cloud solutions. From provider selection to performance optimization, we ensure a seamless cloud journey. Experience flexibility with us.
+            </p>
+    
+            <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] mt-[50px] self-start">
+              View Solutions
+            </button>
+          </div>
+    
+          <!-- RIGHT SIDE -->
+          <div class="col-span-8 flex justify-end items-center relative">
+            <!-- OUTERMOST BOX (PaaS) -->
+            <div class="relative w-[880px] h-[670px] border border-[rgba(202,202,202,1)] flex justify-center items-center mb-[320px]">
+              <!-- PaaS Label -->
+              <span class="absolute bottom-[-22px] left-1/2 -translate-x-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">PaaS</span>
+    
+              <!-- NEXT BOX (SaaS) -->
+              <div class="relative w-[700px] h-[460px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+                <!-- SaaS Label -->
+                <span class="absolute left-[-50px] top-1/2 -translate-y-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">SaaS</span>
+    
+                <!-- NEXT BOX (IaaS) -->
+                <div class="relative w-[500px] h-[337px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+                  <!-- IaaS Label -->
+                  <span class="absolute right-[-50px] top-1/2 -translate-y-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">IaaS</span>
+    
+                  <!-- INNERMOST BOX (Cloud Computing) -->
+                  <div class="w-[300px] h-[250px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+                    <span class="bg-white text-black px-[20px] py-[6px] rounded-full text-sm font-[syne-bold]">Cloud Computing &lt;/&gt;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- SILVERBALL IMAGE POSITIONED LEFT + SPACED LOWER -->
+        <img class="absolute left-[-30px] bottom-[-180px] w-[420px] h-[420px]" src="./images/silverball.png" alt="">
+      </div>
+    </section>
+
+    <section class="pt-[30px] ">
+      <div class=" bg-[rgba(253,253,253,1)] rounded-[42px] relative overflow-hidden">
+        <div class="p-[15px] md:p-[30px] ">
+          <div class="flex items-end gap-[10px]">
+            <p class="text-[20px] lg:text-[24px] font-[syne-medium] tracking-[2px] text-[var(--primary)]">Blog</p>
+            <div>
+              <img class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px]" src="./assets/icons/blackstar.svg" alt="">
+              <img class="h-[14px] w-[14px] lg:w-[18px] lg:h-[18px]" src="./assets/icons/blackstar.svg" alt="">
+            </div>
+          </div>
+      
+          <!-- Heading + Paragraph -->
+          <h1 class="text-[32px] md:text-[38px] lg:text-[44px] w-[100%] md:-[60%] lg:w-[40%]  mt-[50px] font-[syne-semibold] leading-[100%] lg:leading-[50px] text-[var(--primary)] tracking-[2px] mb-[10px]">
+            Latest Tech Insights from our Team
+          </h1>
+      
+          <p class="mb-[20px] w-[100%] md:-[60%] lg:w-[40%] text-[var(--secondary)]">
+            Stay hip and in the know! Check out our blogs on the latest trends in technology. They're concise, informative, and right on the pulse
+          </p>
+        </div>
+    
+    
+        <!-- Positioned image -->
+        <img class="absolute hidden lg:block h-[438px] w-[420px] top-[-190px] right-0" src="./assets/icons/about-third-round.png" alt="">
+
+
+
+
+
+        <div class="pb-[80px]">
+          <div class="swiper blogSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="bg-[rgba(14,14,15,1)] p-[10px] rounded-[19px] ">
+                  <img class="h-[220px] w-[100%] object-cover rounded-[19px]" src="./assets/videos/firstGIF.gif" alt="">
+                  <div class="p-[10px]">
+                    <p class="text-[18px] font-[syne-medium] text-[var(--third)]">15-10-2024</p>
+                    <p class="text-[var(--third)] font-[syne-medium] text-[20px] mt-[10px]">Top IT Company i USA - 2025</p>
+                    <hr class="mt-[10px]">
+                    <div class="mt-[20px] flex justify-between items-center">
+                      <div class="flex gap-[10px] items-center">
+                        <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
+                        <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
+                      </div>
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                        View 
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="bg-[rgba(14,14,15,1)] p-[10px] rounded-[19px] ">
+                  <img class="h-[220px] w-[100%] object-cover rounded-[19px]" src="./assets/videos/thirdGif.gif" alt="">
+                  <div class="p-[10px]">
+                    <p class="text-[18px] font-[syne-medium] text-[var(--third)]">15-10-2024</p>
+                    <p class="text-[var(--third)] font-[syne-medium] text-[20px] mt-[10px]">Top IT Company i USA - 2025</p>
+                    <hr class="mt-[10px]">
+                    <div class="mt-[20px] flex justify-between items-center">
+                      <div class="flex gap-[10px] items-center">
+                        <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
+                        <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
+                      </div>
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                        View 
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="bg-[rgba(14,14,15,1)] p-[10px] rounded-[19px] ">
+                  <img class="h-[220px] w-[100%] object-cover rounded-[19px]" src="./assets/videos/secondGif.gif" alt="">
+                  <div class="p-[10px]">
+                    <p class="text-[18px] font-[syne-medium] text-[var(--third)]">15-10-2024</p>
+                    <p class="text-[var(--third)] font-[syne-medium] text-[20px] mt-[10px]">Top IT Company i USA - 2025</p>
+                    <hr class="mt-[10px]">
+                    <div class="mt-[20px] flex justify-between items-center">
+                      <div class="flex gap-[10px] items-center">
+                        <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
+                        <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
+                      </div>
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                        View 
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[rgba(14,14,15,1)] p-[10px] rounded-[19px] ">
+                  <img class="h-[220px] w-[100%] object-cover rounded-[19px]" src="./assets/videos/secondGif.gif" alt="">
+                  <div class="p-[10px]">
+                    <p class="text-[18px] font-[syne-medium] text-[var(--third)]">15-10-2024</p>
+                    <p class="text-[var(--third)] font-[syne-medium] text-[20px] mt-[10px]">Top IT Company i USA - 2025</p>
+                    <hr class="mt-[10px]">
+                    <div class="mt-[20px] flex justify-between items-center">
+                      <div class="flex gap-[10px] items-center">
+                        <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
+                        <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
+                      </div>
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                        View 
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+    
+   
+ 
+    </section>
+    
+    <section class="pt-[30px] relative">
+      <div class="bg-[var(--background)] p-[15px] lg:p-[30px] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
+        <div class="grid grid-cols-12 gap-[15px] md:gap-[30px]">
+          
+          <!-- Left Column -->
+          <div class="col-span-12 lg:col-span-5">
+            <div class="p-[20px] lg:p-[30px]">
+              <div class="flex items-end gap-[10px]">
+                <p class="text-[24px] font-[syne-medium] tracking-[2px] text-[var(--primary)]">Success stories</p>
+                <div>
+                  <img class="h-[44px] w-[44px]" src="./assets/icons/blackstar.svg" alt="">
+                  <img class="ml-[30px] h-[18px] w-[18px]" src="./assets/icons/blackstar.svg" alt="">
+                </div>
+              </div>
+    
+              <h1 class="text-[32px] lg:text-[44px] mt-[40px] font-[syne-semibold] leading-[42px] lg:leading-[50px] text-[var(--primary)] tracking-[2px] mb-[10px]">
+                Stories From Our Amazing Clients
+              </h1>
+    
+              <p class="mb-[20px] mt-[20px] text-[14px] lg:text-[18px] text-[var(--secondary)]">
+                Stay hip and Our expertise extends to addressing intricate and specific requirements posed by our discerning clientele.
+                Tune in to the firsthand experiences and feedback from our clients.
+                They're concise, informative, and right on the pulse.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Absolute line image only for lg and up -->
+          <div class="hidden lg:block absolute left-[500px] top-[110px] z-0">
+            <img class="w-[1000px] h-[400px] rotate-[40deg]" src="./assets/icons/ourstories-line.svg" alt="" />
+          </div>
+    
+          <!-- Right Column -->
+          <div class="col-span-12 lg:col-span-7 relative">
+            <div class="py-[30px] lg:py-[50px] relative z-10">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px] w-full">
+                <!-- Boxes -->
+                <div class="bg-[rgba(44,44,44,1)] rounded-[28px] p-[20px] lg:p-[30px]">
+                  <p class="text-[var(--third)] text-[14px] lg:text-[18px] font-[syne-medium] tracking-[2px] leading-[26px] lg:leading-[29px]">
+                    The whole development process went smoothly. iROID team is the best technical partner one could get.
+                  </p>
+                  <p class="text-[var(--third)] text-[16px] lg:text-[18px] font-[syne-extrabold] mt-[20px]">Skoocart</p>
+                </div>
+    
+                <!-- Copy for other 3 boxes -->
+                <div class="bg-[rgba(44,44,44,1)] rounded-[28px] p-[20px] lg:p-[30px]">
+                  <p class="text-[var(--third)] text-[14px] lg:text-[18px] font-[syne-medium] tracking-[2px] leading-[26px] lg:leading-[29px]">
+                    The whole development process went smoothly. iROID team is the best technical partner one could get.
+                  </p>
+                  <p class="text-[var(--third)] text-[16px] lg:text-[18px] font-[syne-extrabold] mt-[20px]">Skoocart</p>
+                </div>
+    
+                <div class="bg-[rgba(44,44,44,1)] rounded-[28px] p-[20px] lg:p-[30px]">
+                  <p class="text-[var(--third)] text-[14px] lg:text-[18px] font-[syne-medium] tracking-[2px] leading-[26px] lg:leading-[29px]">
+                    The whole development process went smoothly. iROID team is the best technical partner one could get.
+                  </p>
+                  <p class="text-[var(--third)] text-[16px] lg:text-[18px] font-[syne-extrabold] mt-[20px]">Skoocart</p>
+                </div>
+    
+                <div class="bg-[rgba(44,44,44,1)] rounded-[28px] p-[20px] lg:p-[30px]">
+                  <p class="text-[var(--third)] text-[14px] lg:text-[18px] font-[syne-medium] tracking-[2px] leading-[26px] lg:leading-[29px]">
+                    The whole development process went smoothly. iROID team is the best technical partner one could get.
+                  </p>
+                  <p class="text-[var(--third)] text-[16px] lg:text-[18px] font-[syne-extrabold] mt-[20px]">Skoocart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    <footer class="pt-[10px] md:pt-[0px] md:py-[30px]">
+      <div class="bg-[rgba(30,30,30,1)] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] p-[20px] md:p-[30px]">
+        <!-- Logo -->
+        <img class="w-[150px] md:w-[179px] h-auto" src="./images/white-logo.svg" alt="">
+    
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-[20px] mt-[30px]">
+          
+          <!-- Left Column -->
+          <div class="md:col-span-3 text-[var(--third)]">
+            <ul>
+              <li class="text-[15px] lg:text-[18px] font-[syne-extrabold]">Services</li>
+              <div class="mt-[20px] space-y-[5px]">
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Website Development E</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Commerce Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Mobile Apph</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Digital</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Marketing UI/UX Design</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">CMS Development Web</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">App Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Testing & Quality</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Analysis IOT</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Maintenance & Support</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">DevOps Solution Game</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software company in UK</li>
+              </div>
+            </ul>
+          </div>
+    
+          <!-- Middle Column -->
+          <div class="md:col-span-3 text-[var(--third)]">
+            <ul>
+              <li class="text-[15px] lg:text-[18px] font-[syne-extrabold]">Technologies</li>
+              <div class="mt-[20px] space-y-[5px]">
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Website Development E</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Commerce Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Mobile Apph</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Digital</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Marketing UI/UX Design</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">CMS Development Web</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">App Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Testing & Quality</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Analysis IOT</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Maintenance & Support</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">DevOps Solution Game</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software company in UK</li>
+              </div>
+            </ul>
+          </div>
+    
+          <!-- Right Column -->
+          <div class="md:col-span-6 flex flex-col justify-between gap-[30px] mt-[30px] md:mt-0">
+            <!-- Inner Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
+              <!-- Box 1 -->
+              <div class="text-[var(--third)]">
+                <ul>
+                  <li class="text-[15px] lg:text-[18px]  font-[syne-extrabold]">Technologies</li>
+                  <div class="mt-[20px]">
+                    <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                  </div>
+                </ul>
+              </div>
+              <!-- Box 2 -->
+              <div class="text-[var(--third)]">
+                <ul>
+                  <li class="text-[15px] lg:text-[18px]  font-[syne-extrabold]">Technologies</li>
+                  <div class="mt-[20px]">
+                    <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+    
+            <!-- CTA and Socials -->
+            <div>
+              <h1 class="text-[18px] md:text-[22px] md:text-[28px] text-[var(--third)] font-[syne-extrabold] leading-[32px] md:leading-[39px] tracking-[2px]">
+                Ready for what’s next? <br> Grow your business <br> today
+              </h1>
+    
+              <div class="flex flex-col sm:flex-row justify-between sm:items-center mt-[30px] gap-[20px]">
+                <button class="text-[12px] lg:text-[14px] py-[5px] px-[20px] md:py-[10px] md:px-[12px] border text-white rounded-[28px] self-start sm:self-auto">
+                  Contact Us
+                </button>
+    
+                <div class="flex gap-[15px]">
+                  <img class="w-[28px] h-[18px]" src="./assets/icons/facebook.svg" alt="">
+                  <img class="w-[28px] h-[18px]" src="./assets/icons/x.svg" alt="">
+                  <img class="w-[28px] h-[18px]" src="./assets/icons/pintrest.svg" alt="">
+                  <img class="w-[28px] h-[18px]" src="./assets/icons/linkdin.svg" alt="">
+                  <img class="w-[28px] h-[18px]" src="./assets/icons/instagram.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </footer>
+    
+
     
     
 
+   
+    
 
 
 
@@ -654,4 +1119,72 @@
 
 
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".blogSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000, // 3 seconds
+        disableOnInteraction: false, // keeps autoplay active even after user interaction
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        0: { slidesPerView: 1 },
+      }
+    });
+  </script>
+
+<script>
+  new Swiper(".logoSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2.5,
+      },
+      768: {
+        slidesPerView: 3.5,
+      },
+      1024: {
+        slidesPerView: 4.5,
+      },
+      1440: {
+        slidesPerView: 6.5,
+      }
+    },
+    // No pagination
+    pagination: false,
+    navigation: false,
+  });
+</script>
+
+<script>
+  const mobileMenuBtn = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+  
+
 </html>

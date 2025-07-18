@@ -76,7 +76,7 @@ body {
 
 
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1250px) {
 .nav-custom-gap{
   gap: 15px  !important;
 }
@@ -120,6 +120,61 @@ width: 130px !important;
   font-size: 18px !important;
   line-height: 24px !important ;
 }
+.our-service-cusotm-margin {
+  margin-left: 20px !important;
+}
+.our-service-cusotm-font-size{
+  font-size: 24px !important;
+} 
 
+.ourwork-padding {
+  padding-left: 15px !important;
+  padding-right: 15px;
+}
+.our-work-paragraph {
+  font-size: 14px  !important;
 }
 
+.our-work-heading {
+  font-size: 18px !important;
+}
+
+.custom-right-round {
+  right: -165px !important;
+}
+.custom-box-right{
+  right: -350px !important;
+}
+.mini-box-1{
+height:872px  !important ;
+width: 615 !important;
+}
+.mini-box-2{
+  height: 500px !important ;
+  width: 475px !important ;
+}
+.mini-box-3{
+  height: 380px !important ;
+  width: 325px !important;
+}
+.mini-box-4{
+  height:250px !important ;
+  width: 195px !important ;
+}
+}
+
+@media (min-width: 1251px) and (max-width: 1440px) {
+  .button-fonts{
+    font-size: 14px;
+  }
+
+  .nav-custom-gap{
+    gap: 15px !important;
+  }
+  .nav-buttom-padding{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

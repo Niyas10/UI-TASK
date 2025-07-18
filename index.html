@@ -17,7 +17,8 @@
   <body>
 
 
-    <section class="bg-[var(--background)] p-[15px] md:p-[30px] custom-padding rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
+ 
+       <section class="bg-[var(--background)] p-[15px] md:p-[30px] custom-padding rounded-[20px] md:rounded-[30px] lg:rounded-[45px] relative overflow-hidden">
       <!-- Background SVG -->
       <img
         src="./assets/icons/Landing-black.svg"
@@ -35,30 +36,34 @@
         <!-- Desktop Menu -->
         <div class="hidden lg:flex">
           <ul class="flex gap-[40px] nav-custom-gap">
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Agency</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Services</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Works</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Careers</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Technologies</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Testrimonials</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Contact</li>
-            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium]">Blog</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Agency</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Services</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Works</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Careers</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Technologies</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Testrimonials</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Contact</li>
+            <li class="text-[16px] nav-custom-text leading-[100%] text-[var(--primary)] cursor-pointer font-[syne-medium] border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out">Blog</li>
           </ul>
         </div>
     
         <!-- Desktop Buttons -->
         <div class="hidden lg:flex gap-[20px] nav-button-gap">
-          <button
-            class="rounded-[28px] nav-buttom-padding nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] font-[syne-medium]"
-          >
-            Get Quote
-          </button>
-          <button
-            class="rounded-[28px] nav-buttom-padding nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] flex gap-[10px] items-center font-[syne-medium]"
-          >
-            Hire a Developer
-            <img class="h-[12px] w-[12px]" src="./assets/icons/nav-button-icon.svg" alt="" />
-          </button>
+   <!-- Get Quote Button -->
+<button
+class="rounded-[28px] nav-buttom-padding button-fonts py-[13px] px-[25px] nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] font-[syne-medium] transition-all duration-300 ease-in-out hover:bg-black hover:text-white"
+>
+Get Quote
+</button>
+
+<!-- Hire a Developer Button -->
+<button
+class="rounded-[28px] py-[13px] px-[25px] button-fonts nav-buttom-padding nav-custom-text border border-[var(--custom-border)] tracking-[0.02em] flex gap-[10px] items-center font-[syne-medium] transition-all duration-300 ease-in-out hover:bg-black hover:text-white"
+>
+Hire a Developer
+<img class="h-[12px] w-[12px]" src="./assets/icons/nav-button-icon.svg" alt="" />
+</button>
+
         </div>
     
         <!-- Hamburger for Mobile -->
@@ -268,7 +273,7 @@
           
           <!-- Left Column -->
           <div class="col-span-12 md:col-span-5 relative">
-            <div class="flex lg:ml-[120px] justify-start  items-end gap-[20px]">
+            <div class="flex our-service-cusotm-margin lg:ml-[120px] justify-start  items-end gap-[20px]">
               <p class="text-[var(--third)] text-[20px] lg:text-[24px]  font-[syne-medium]">Our Services</p> 
               <div>
                 <img class="w-[24px] h-[24px] lg:w-[44px] lg:h-[44px]" src="./assets/icons/whitestar.svg" alt="">
@@ -282,79 +287,94 @@
     
           <!-- Right Column -->
           <div class="col-span-12 md:col-span-7">
-            <ul class="flex flex-col  items-start  lg:items-start gap-[20px]">
-              
+            <ul class="flex flex-col items-start lg:items-start gap-[20px]">
+
               <li class="flex items-center gap-[10px] md:gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] our-service-cusotm-font-size tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   E Commerce Development
                 </span>
                 <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   Hire Software Developer
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   Digital Marketing
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   ERP Development
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   Website Development
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   Mobile App Development
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
               <li class="flex items-center gap-[20px]">
                 <span
-                  class="font-[syne-bold] tracking-[2px] text-[14px] md:text-[18px] lg:text-[38px]"
-                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                  class="font-[syne-bold] tracking-[2px] our-service-cusotm-font-size text-[14px] md:text-[18px] lg:text-[38px] transition-all duration-300 ease-in-out hover:text-[16px] md:hover:text-[22px] lg:hover:text-[42px]"
+                  style="background: linear-gradient(90deg, #FFFFFF 0%, #303030 117.27%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;"
                 >
                   UI/UX Design
                 </span>
-                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"  src="./assets/icons/our-service-arrow.svg" alt="">
+                <img class="h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]" src="./assets/icons/our-service-arrow.svg" alt="">
               </li>
-    
+            
             </ul>
+            
           </div>
     
         </div>
@@ -397,11 +417,11 @@
           <!-- Left (7 cols) -->
           <div class="col-span-12 lg:col-span-7 p-[20px] md;p-[30px] flex flex-col md:flex-row rounded-[42px]" style="background-color: #d6d4c5;">
               <div  class="flex  flex-col justify-end">
-                <h1 class="text-[18px] md:text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-                <p class="text-[14px] md:text-[18px] font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
+                <h1 class="text-[18px] md:text-[20px] tracking-[2px] our-work-heading  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+                <p class="text-[14px] md:text-[18px] font-[syne-medium] our-work-paragraph tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
                 <div class="flex gap-[10px] mt-[10px]">
-                  <button class="text-[12px] md:text-[14px] rounded-[28px] py-[5px] px-[20px]  md:py-[10px] md:px-[26px] font-[syne-medium border-custom ">Healthcare</button>
-                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px] md:py-[10px] md:px-[26px]">websites</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] ourwork-padding py-[5px] px-[20px]  md:py-[10px] md:px-[26px] font-[syne-medium border-custom ">Healthcare</button>
+                  <button class="text-[12px] md:text-[14px] rounded-[28px] ourwork-padding  font-[syne-medium border-custom  py-[5px] px-[20px] md:py-[10px] md:px-[26px]">websites</button>
                 </div>
               </div>
               <div >
@@ -418,15 +438,15 @@
           
             <!-- Text content at the bottom -->
             <div class="flex flex-col justify-end">
-              <h1 class="text-[18px] md:text-[20px] tracking-[2px]  text-[var(--third)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-              <p class="text-[14px] md:text-[18px] font-[syne-medium] text-[var(--third)] tracking-[2px] mt-[10px]">
+              <h1 class="text-[18px] md:text-[20px] tracking-[2px] our-work-heading  text-[var(--third)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+              <p class="text-[14px] md:text-[18px] font-[syne-medium] our-work-paragraph text-[var(--third)] tracking-[2px] mt-[10px]">
                 Elevating Global Presence with Captivating <br> Design. DentCare Global is a we...
               </p>
               <div class="flex gap-[10px] mt-[10px]">
-                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
+                <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Healthcare
                 </button>
-                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]]">
+                <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] border border-white text-[var(--third)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]]">
                   Websites
                 </button>
               </div>
@@ -439,11 +459,11 @@
           <!-- Left (7 cols) -->
           <div class="col-span-12 lg:col-span-6 p-[30px] flex-col md:flex-row  flex rounded-[42px]" style="background-color: rgba(252, 252, 250, 1);">
               <div  class="flex  flex-col justify-end">
-                <h1 class="text-[18px] md:text-[20px] tracking-[2px]  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-                <p class="text-[18px] md:text-[20px]font-[syne-medium] tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
+                <h1 class="text-[18px] md:text-[20px] tracking-[2px] our-work-heading  font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+                <p class="text-[18px] md:text-[20px]font-[syne-medium our-work-paragraph tracking-[2px] mt-[10px]">Elevating Global Presence with Captivating  Design. DentCare Global is a we...</p>
                 <div class="flex gap-[10px] mt-[10px]">
-                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">Healthcare</button>
-                  <button class="text-[12px] md:text-[14px] rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">websites</button>
+                  <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">Healthcare</button>
+                  <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] font-[syne-medium border-custom  py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">websites</button>
                 </div>
               </div>
               <div >
@@ -460,15 +480,15 @@
           
             <!-- Text content at the bottom -->
             <div class="flex flex-col justify-end">
-              <h1 class="text-[18px] md:text-[20px] tracking-[2px]  text-[var(--primary)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
-              <p class="text-[18px] md:text-[20px] font-[syne-medium]  text-[var(--primary)] tracking-[2px] mt-[10px]">
+              <h1 class="text-[18px] md:text-[20px] tracking-[2px] our-work-heading  text-[var(--primary)] font-[syne-extrabold]">DENTCARE GLOBAL</h1>
+              <p class="text-[18px] md:text-[20px] font-[syne-medium] our-work-paragraph  text-[var(--primary)] tracking-[2px] mt-[10px]">
                 Elevating Global Presence with Captivating <br> Design. DentCare Global is a we...
               </p>
               <div class="flex gap-[10px] mt-[10px]">
-                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-custom text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
+                <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] border border-custom text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Healthcare
                 </button>
-                <button class="text-[12px] md:text-[14px] rounded-[28px] border border-custom  text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
+                <button class="text-[12px] md:text-[14px] ourwork-padding rounded-[28px] border border-custom  text-[var(--primary)] font-[syne-medium] py-[5px] px-[20px]  md:py-[10px] md:px-[26px]">
                   Websites
                 </button>
               </div>
@@ -486,7 +506,7 @@
     <section class="pt-[30px] relative overflow-hidden">
 
       <!-- Bottom Right Round PNG (Spring Base) -->
-      <div class="absolute hidden lg:block bottom-[500px] right-[-100px] z-[10]">
+      <div class="absolute hidden lg:block bottom-[500px] custom-right-round right-[-100px] z-[10]">
         <img class="w-[270px] h-[250px]" src="./assets/icons/about-third-round.png" alt="">
       </div>
     
@@ -590,7 +610,7 @@
         </p>
     
         <!-- Box Image Positioned to the Right -->
-        <div class="absolute hidden lg:block right-[-130px] top-[75%] translate-y-[-50%] rotate-[-12.21deg] z-[1]">
+        <div class="absolute hidden lg:block custom-box-right right-[-130px] top-[75%] translate-y-[-50%] rotate-[-12.21deg] z-[1]">
           <img class="w-[800px] h-[800px]" src="./images/box.png" alt="">
         </div>
     
@@ -598,8 +618,10 @@
     
           <div>
             <!-- Background Line SVG Positioned Center -->
-            <div class="absolute hidden lg:block top-[85px] inset-0 bottom-[85px] flex justify-center z-[1] items-center z-0 pointer-events-none">
-              <img src="./assets/icons/frame-work-line.svg" alt="">
+            <div class="absolute hidden lg:block top-[75px] inset-0 bottom-[85px] flex justify-center z-[1] items-center z-0 pointer-events-none">
+              <div class="absolute hidden lg:block top-[75px] inset-0 bottom-[85px] flex justify-center z-[1] items-center z-0 pointer-events-none">
+                <img src="./assets/icons/frame-work-line.svg" alt="">
+              </div>
             </div>
     
             <!-- Foreground Framework Tags -->
@@ -648,7 +670,7 @@
     
           <div class="mt-[30px]">
             <!-- Background Line SVG Positioned Center -->
-            <div class="absolute hidden lg:block top-[85px] inset-0 flex justify-center z-[1] items-center z-0 pointer-events-none">
+            <div class="absolute hidden lg:block top-[75px] inset-0 flex justify-center z-[1] items-center z-0 pointer-events-none">
               <img src="./assets/icons/frame-work-line.svg" alt="">
             </div>
     
@@ -719,7 +741,7 @@
             </p>
           </div>
     
-          <button class="text-[12px] md:text-[14px] rounded-[28px] py-[5px] px-[20px]  md:py-[10px] md:px-[26px] border text-white  rounded-[28px] mt-[40px] self-start">
+          <button class="text-[12px] md:text-[14px] transition-all duration-300 ease-in-out hover:bg-white hover:text-black rounded-[28px] py-[5px] px-[20px]  md:py-[10px] md:px-[26px] border text-white  rounded-[28px] mt-[40px] self-start">
             Hire Now
           </button>
     
@@ -752,7 +774,7 @@
               Unlock tailored cloud solutions. From provider selection to performance optimization, we ensure a seamless cloud journey. Experience flexibility with us.
             </p>
     
-            <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] mt-[50px] self-start">
+            <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] mt-[50px] self-start transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
               View Solutions
             </button>
           </div>
@@ -760,22 +782,22 @@
           <!-- RIGHT SIDE -->
           <div class="col-span-8 flex justify-end items-center relative">
             <!-- OUTERMOST BOX (PaaS) -->
-            <div class="relative w-[880px] h-[670px] border border-[rgba(202,202,202,1)] flex justify-center items-center mb-[320px]">
+            <div class="relative w-[880px] h-[670px] mini-box-1 border border-[rgba(202,202,202,1)] flex justify-center items-center mb-[320px]">
               <!-- PaaS Label -->
               <span class="absolute bottom-[-22px] left-1/2 -translate-x-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">PaaS</span>
     
               <!-- NEXT BOX (SaaS) -->
-              <div class="relative w-[700px] h-[460px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+              <div class="relative w-[700px] h-[460px] mini-box-2 border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
                 <!-- SaaS Label -->
                 <span class="absolute left-[-50px] top-1/2 -translate-y-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">SaaS</span>
     
                 <!-- NEXT BOX (IaaS) -->
-                <div class="relative w-[500px] h-[337px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+                <div class="relative w-[500px] h-[337px] mini-box-3 border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
                   <!-- IaaS Label -->
                   <span class="absolute right-[-50px] top-1/2 -translate-y-1/2 bg-white text-black px-[16px] py-[4px] rounded-full text-sm font-[syne-bold]">IaaS</span>
     
                   <!-- INNERMOST BOX (Cloud Computing) -->
-                  <div class="w-[300px] h-[250px] border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
+                  <div class="w-[300px] h-[250px] mini-box-4 border border-[rgba(202,202,202,1)] rounded-[16px] flex justify-center items-center">
                     <span class="bg-white text-black px-[20px] py-[6px] rounded-full text-sm font-[syne-bold]">Cloud Computing &lt;/&gt;</span>
                   </div>
                 </div>
@@ -834,7 +856,7 @@
                         <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
                         <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
                       </div>
-                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
                         View 
                       </button>
                     </div>
@@ -855,7 +877,7 @@
                         <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
                         <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
                       </div>
-                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
                         View 
                       </button>
                     </div>
@@ -876,7 +898,7 @@
                         <img class="h-[52px] w-[52px] rounded-[100%]" src="./images/user.jpg" alt="">
                         <p class="text-[18px] text-[var(--third)] font-[syne-medium]">By Admin</p>
                       </div>
-                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start">
+                      <button class="py-[10px] px-[26px] border text-white text-[15px] rounded-[28px] self-start transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
                         View 
                       </button>
                     </div>
@@ -985,7 +1007,7 @@
       </div>
     </section>
     
-    <footer class="pt-[10px] md:pt-[0px] md:py-[30px]">
+    <footer class="pt-[10px] md:pt-[30px] md:py-[30px]">
       <div class="bg-[rgba(30,30,30,1)] rounded-[20px] md:rounded-[30px] lg:rounded-[45px] p-[20px] md:p-[30px]">
         <!-- Logo -->
         <img class="w-[150px] md:w-[179px] h-auto" src="./images/white-logo.svg" alt="">
@@ -998,22 +1020,22 @@
             <ul>
               <li class="text-[15px] lg:text-[18px] font-[syne-extrabold]">Services</li>
               <div class="mt-[20px] space-y-[5px]">
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Website Development E</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Commerce Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Mobile Apph</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Digital</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Marketing UI/UX Design</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">CMS Development Web</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">App Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Testing & Quality</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Analysis IOT</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Maintenance & Support</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">DevOps Solution Game</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software company in UK</li>
+                <li class="text-[14px]  lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">ERP Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Website Development E</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Commerce Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Mobile Apph</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Digital</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Marketing UI/UX Design</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Software Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">CMS Development Web</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">App Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Testing & Quality</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Analysis IOT</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Maintenance & Support</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">DevOps Solution Game</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Software company in UK</li>
               </div>
             </ul>
           </div>
@@ -1023,22 +1045,22 @@
             <ul>
               <li class="text-[15px] lg:text-[18px] font-[syne-extrabold]">Technologies</li>
               <div class="mt-[20px] space-y-[5px]">
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Website Development E</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Commerce Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Mobile Apph</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Digital</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Marketing UI/UX Design</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">CMS Development Web</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">App Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Testing & Quality</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Analysis IOT</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Maintenance & Support</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">DevOps Solution Game</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Development</li>
-                <li class="text-[14px] lg:text-[18px] font-[syne-medium]">Software company in UK</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">ERP Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Website Development E</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Commerce Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Mobile Apph</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Digital</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Marketing UI/UX Design</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Software Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">CMS Development Web</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">App Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Testing & Quality</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Analysis IOT</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Maintenance & Support</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">DevOps Solution Game</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Development</li>
+                <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">Software company in UK</li>
               </div>
             </ul>
           </div>
@@ -1052,7 +1074,7 @@
                 <ul>
                   <li class="text-[15px] lg:text-[18px]  font-[syne-extrabold]">Technologies</li>
                   <div class="mt-[20px]">
-                    <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                    <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">ERP Development</li>
                   </div>
                 </ul>
               </div>
@@ -1061,7 +1083,7 @@
                 <ul>
                   <li class="text-[15px] lg:text-[18px]  font-[syne-extrabold]">Technologies</li>
                   <div class="mt-[20px]">
-                    <li class="text-[14px] lg:text-[18px] font-[syne-medium]">ERP Development</li>
+                    <li class="text-[14px] lg:text-[18px] font-[syne-medium] border-b border-transparent hover:border-white transition-all duration-300 ease-in-out">ERP Development</li>
                   </div>
                 </ul>
               </div>
@@ -1074,16 +1096,16 @@
               </h1>
     
               <div class="flex flex-col sm:flex-row justify-between sm:items-center mt-[30px] gap-[20px]">
-                <button class="text-[12px] lg:text-[14px] py-[5px] px-[20px] md:py-[10px] md:px-[12px] border text-white rounded-[28px] self-start sm:self-auto">
+                <button class="text-[12px] lg:text-[14px] py-[5px] px-[20px] md:py-[10px] md:px-[12px] border text-white rounded-[28px] self-start sm:self-auto transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
                   Contact Us
                 </button>
     
                 <div class="flex gap-[15px]">
-                  <img class="w-[28px] h-[18px]" src="./assets/icons/facebook.svg" alt="">
-                  <img class="w-[28px] h-[18px]" src="./assets/icons/x.svg" alt="">
-                  <img class="w-[28px] h-[18px]" src="./assets/icons/pintrest.svg" alt="">
-                  <img class="w-[28px] h-[18px]" src="./assets/icons/linkdin.svg" alt="">
-                  <img class="w-[28px] h-[18px]" src="./assets/icons/instagram.svg" alt="">
+                  <img class="w-[28px] h-[18px] cursor-pointer" src="./assets/icons/facebook.svg" alt="">
+                  <img class="w-[28px] h-[18px] cursor-pointer" src="./assets/icons/x.svg" alt="">
+                  <img class="w-[28px] h-[18px] cursor-pointer" src="./assets/icons/pintrest.svg" alt="">
+                  <img class="w-[28px] h-[18px] cursor-pointer" src="./assets/icons/linkdin.svg" alt="">
+                  <img class="w-[28px] h-[18px] cursor-pointer" src="./assets/icons/instagram.svg" alt="">
                 </div>
               </div>
             </div>
@@ -1092,6 +1114,7 @@
         </div>
       </div>
     </footer>
+    
     
 
     
